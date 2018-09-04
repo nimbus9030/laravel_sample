@@ -1,10 +1,9 @@
 clone:
   depth: full
 pipelines:
-  default:
-  - step:
-      name: Deploy to Heroku
-      deployment: production
-      script:
-        - git push https://heroku:a78ecb0e-1534-4ad1-96a9-0420b0739514@git.heroku.com/hl-bboard.git HEAD
-
+  branches:
+    chapter7:
+      - step:
+          script:
+            - echo "This script runs only on commit to the chapter7 branch."
+            - git push https://heroku:a78ecb0e-1534-4ad1-96a9-0420b0739514@git.heroku.com/hl-bboard.git HEAD
