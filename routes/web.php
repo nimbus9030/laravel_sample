@@ -18,8 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('/bbs', 'BbsController@index');
-// Route::get('/bbs', function(){
-// 	return view('bbs');
-// });
+
+Route::get('/post', 'PostController@index');
+Route::post('/post', 'PostController@store')->name('insert');
