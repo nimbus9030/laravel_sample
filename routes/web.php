@@ -24,3 +24,6 @@ Route::get('/bbs/{id}', 'BbsController@show_detail');
 
 Route::get('/post', 'PostController@index');
 Route::post('/post', 'PostController@store')->name('insert');
+Route::post('/delete', 'PostController@destory')->name('delete');
+Route::get('post/{id}/edit', 'PostController@edit');
+Route::post('update', 'PostController@update')->name('update');
