@@ -27,19 +27,7 @@
                         <!-- foreach -->
                         @foreach( $posts as $post )
                             <tr>
-                                <td>
-                                <form class="form-horizontal" method="POST" action="{{ route('delete') }}">
-                                    {{ csrf_field() }}
-                                    <input id="id" name="id" value="{{ $post->id }}" style="display:none">
-                                    <button type="submit" class="btn-small btn-danger">
-                                        Delete
-                                    </button>
-                                </form>                                
-                                </td>
-                                <td>{{ $post->id }}</td>
-                                <td> <a href=" {{ url('post/'.$post->id.'/edit/') }}">{{ $post->title}} </td>
-                                <td>{{ $post->created_at }}</td>
-                                <td>{{ $post->updated_at }}</td>
+                                <!-- $post -->
                             </tr>
                         @endforeach
 
@@ -49,7 +37,6 @@
                         <div class="col-md-4 no-padding">
                             <ul class="pagination no-margin pull-left">
                                 <!-- paginate -->
-                                {{ $posts->links() }}
                             </ul>
                         </div><!-- end col-md-4 no-padding-->
                     </div><!-- end box-footer-->
