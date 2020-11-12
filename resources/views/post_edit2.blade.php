@@ -26,10 +26,10 @@
                         <input id="" name="id" value="" style="display:none">
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <a href="{{ url()->previous() }}" class="btn btn-danger">Cancel</a>
+                                <a href="{{ url()->previous() }}" class="btn btn-danger">キャンセル</a>
 
                                 <button type="submit" class="btn btn-primary">
-                                    Register
+                                    登録
                                 </button>
                             </div>
                         </div>
