@@ -23,7 +23,7 @@
                                 <textarea id="content" name="content" class="form-control" cols="50" rows="10" required> </textarea>
                             </div>
                         </div>
-                        <input id="" name="id" value="" style="display:none">
+                        <input id="" name="id" value="{{ $post->id }}" style="display:none">
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <a href="{{ url()->previous() }}" class="btn btn-danger">キャンセル</a>
