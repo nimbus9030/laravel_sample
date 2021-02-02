@@ -63,22 +63,24 @@
     </article>
     <hr>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">コメント</div>
-
-                    <div class="panel-body">
-                        <!-- add form  -->
-                    </div>
-                    <div class="panel-body">
-                    <!-- add comment foreach -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">コメント</div>
+    
+                        <div class="panel-body">
+                            <!-- add form  -->
+                        </div>
+                        <div class="panel-body">
+                        <!-- add comment foreach -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 
     <!-- Footer -->
     <footer>
